@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webシステム構築基礎 第3回課題 - お薦めの旅行先紹介</title>
+</head>
+<body>
+  <h1>Webシステム構築基礎 第3回課題</h1>
+
+  <p>氏名：野田将汰（AAA24265）</p>
+
+  <h2>✈️ お薦めの旅行先：京都</h2>
+
+  <p>京都は歴史ある街並みと美しい自然が融合した、日本を代表する観光地です。</p>
+  <p>春は桜、秋は紅葉など、四季折々の風景が楽しめるのが魅力です。</p>
+
+  <img src="https://cdn.pixabay.com/photo/2016/11/29/04/05/japan-1867776_1280.jpg" 
+       alt="京都の風景" width="500">
+
+  <p>写真提供：<a href="https://pixabay.com/" target="_blank">Pixabay</a>（著作権フリー画像）</p>
+
+  <hr>
+
+  <p><a href="index.html">🍜 お薦めの食べ物紹介ページへ戻る</a></p>
+</body>
+</html>
