@@ -4,8 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webシステム構築基礎 第3回課題 - お薦めの旅行先紹介</title>
+  <style>
+    body {
+      font-family: "メイリオ", sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    form {
+      background: #f9f9f9;
+      border: 2px dashed #ccc;
+      padding: 20px;
+      width: 320px;
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin: 8px 0;
+    }
+    input {
+      width: 100px;
+      margin-left: 5px;
+    }
+    output {
+      font-weight: bold;
+      color: #d35400;
+      margin-left: 10px;
+    }
+    hr {
+      margin: 30px 0;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- 🔹 ページの先頭にBMIフォームを追加 -->
+  <h2>💪 BMI指標計算フォーム</h2>
+  <form oninput="bmi.value = Math.round((Number(weight.value) / Math.pow(Number(height.value)/100, 2)) * 10) / 10">
+    <p><label>体重（kg）:<input name="weight" type="number" step="any"></label></p>
+    <p><label>身長（cm）:<input name="height" type="number" step="any"></label></p>
+    <p><label>BMI：<output name="bmi"></output></label></p>
+  </form>
+
+  <hr>
+
+  <!-- 🔹元の内容をそのまま残す -->
   <h1>Webシステム構築基礎 第3回課題</h1>
 
   <p>氏名：野田将汰（AAA24265）</p>
