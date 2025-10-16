@@ -38,9 +38,10 @@
     }
   </style>
 </head>
+
 <body>
 
-  <!-- 🔹 ページの先頭にBMIフォームを追加 -->
+  <!-- ✅ ここをページ先頭に追加する！ -->
   <h2>💪 BMI指標計算フォーム</h2>
   <form oninput="bmi.value = Math.round((Number(weight.value) / Math.pow(Number(height.value)/100, 2)) * 10) / 10">
     <p><label>体重（kg）:<input name="weight" type="number" step="any"></label></p>
@@ -50,7 +51,7 @@
 
   <hr>
 
-  <!-- 🔹元の内容をそのまま残す -->
+  <!-- 🔹ここから元の内容 -->
   <h1>Webシステム構築基礎 第3回課題</h1>
 
   <p>氏名：野田将汰（AAA24265）</p>
