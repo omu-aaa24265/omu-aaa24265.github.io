@@ -5,28 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phase 0-1: HTML基礎確認</title>
   <style>
+    body {
+      margin: 0;
+      font-family: "Yu Gothic", sans-serif;
+    }
+
+    /* 時計をページ最上部中央に配置 */
     #clock {
       font-size: 2em;
       font-weight: bold;
       color: #2c3e50;
       text-align: center;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      background-color: #eef2f3;
+      padding: 10px 0;
+      margin: 0;
+      border-bottom: 2px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
+
+    /* 画像デザイン */
     img.header-image {
       display: block;
-      margin: 0 auto;
+      margin: 30px auto;
       width: 400px;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
 
-  <!-- 🔹ページの最上部に時計を配置 -->
+  <!-- ⏰ ページの最上部に固定時計 -->
   <div id="clock"></div>
 
-  <!-- 🖼 時計のすぐ下に著作権フリー画像を配置 -->
+  <!-- 🖼 時計の下に著作権フリー画像 -->
   <img class="header-image" 
        src="https://cdn.pixabay.com/photo/2016/11/29/12/54/computer-1869306_1280.jpg" 
        alt="パソコン作業のイメージ">
