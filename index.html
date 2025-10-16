@@ -10,12 +10,13 @@
       font-weight: bold;
       color: #2c3e50;
       text-align: center;
+      margin-top: 10px;
       margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <!-- 🔹ページ先頭に時計を配置 -->
+  <!-- 🔹ページの最上部（先頭）に配置！ -->
   <div id="clock"></div>
 
   <h1>🌐 Phase 0-1: HTML基礎確認</h1>
@@ -45,4 +46,28 @@
   </div>
 
   <div>
-    <h2>🔗 課題3: リ
+    <h2>🔗 課題3: リンク作成</h2>
+    <p><strong>指示:</strong> 以下のリンクを作成してください：</p>
+    <ul>
+      <li><a href="https://www.google.com" target="_blank">Google</a></li>
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><a href="second.html">✈️ お薦めの旅行先を紹介するページへ</a></p>
+
+  <!-- ⏰ 時計スクリプト（ページ先頭にある #clock に時刻を表示） -->
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
