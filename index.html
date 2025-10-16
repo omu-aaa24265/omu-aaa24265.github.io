@@ -13,11 +13,23 @@
       margin-top: 10px;
       margin-bottom: 20px;
     }
+    img.header-image {
+      display: block;
+      margin: 0 auto;
+      width: 400px;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
+
   <!-- 🔹ページの最上部に時計を配置 -->
   <div id="clock"></div>
+
+  <!-- 🖼 時計のすぐ下に著作権フリー画像を配置 -->
+  <img class="header-image" 
+       src="https://cdn.pixabay.com/photo/2016/11/29/12/54/computer-1869306_1280.jpg" 
+       alt="パソコン作業のイメージ">
 
   <h1>🌐 Phase 0-1: HTML基礎確認</h1>
 
@@ -67,5 +79,6 @@
     setInterval(updateClock, 1000);
     updateClock();
   </script>
+
 </body>
 </html>
